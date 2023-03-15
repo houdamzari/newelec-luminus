@@ -2,14 +2,25 @@ import { useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { logo, notification, germany, english, nederlands, spain, france, settingsIcon, policies, greyArrow } from '../../assets'
 import { Link,useLocation } from "react-router-dom";
+import {LanguageDropdown,SettingsDropdown,Flex} from "..";
 
 import useClickOutside from "../../hooks/useClickOutside";
 function Navbar() {
   const location = useLocation();
   const ref = useClickOutside(()=> setOpen(false))
-  
   const  [open, setOpen] = useState(false);
-  const  [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
+   const languages = [
+    { icon: english, name: "English(EN)" },
+    { icon: france, name: "Francais(FR)" },
+    { icon: nederlands, name: "Nederlands(NL)" },
+    { icon: spain, name: "Espanol(ES)" },
+    { icon: germany, name: "Deutsch(DE)" },
+  ];
+  const settings = [
+    { icon: settingsIcon, name: "Profile settings" },
+    { icon: policies, name: "Our policies" },
+  ];
   const routes = [
     {
       path: "/dashboard",
@@ -53,7 +64,6 @@ function Navbar() {
 </li>
       </ul>
       </Flex>
-
       <Flex
         flexDirection={"flex-row"}
         justifyContent={"justify-between"}
@@ -61,7 +71,9 @@ function Navbar() {
         gap={"gap-[15px]"}
       >
         <img src={notification} alt="notification" className="w-6" />
-       
+        <LanguageDropdown dropdownOptions={languages} />
+        <SettingsDropdown dropdownOptions={settings} />
+
       </Flex>
     </Flex>
   );
