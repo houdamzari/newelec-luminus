@@ -5,3 +5,4 @@ export { default as SearchBar } from "./SearchBar/SearchBar";
 export { default as SettingsDropdown } from "./SettingsDropdown/SettingsDropdown";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as TitleSection } from "./TitleSection/TitleSection";
+export { default as Container } from "./Container/Container";

@@ -1,8 +1,7 @@
 import { useState } from "react";
-import SearchBar from "../SearchBar/SearchBar";
 import { logo, notification, germany, english, nederlands, spain, france, settingsIcon, policies, greyArrow } from '../../assets'
 import { Link,useLocation } from "react-router-dom";
-import {LanguageDropdown,SettingsDropdown,Flex} from "..";
+import {LanguageDropdown,SettingsDropdown,Flex,SearchBar} from "..";
 
 import useClickOutside from "../../hooks/useClickOutside";
 function Navbar() {
@@ -78,3 +77,6 @@ function Navbar() {
     </Flex>
   );
 }
+
+
+export default Navbar;
