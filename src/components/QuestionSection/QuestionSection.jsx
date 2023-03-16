@@ -6,7 +6,7 @@ function QuestionSection() {
     {
       id: 1,
       question:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio, quam id distinctio voluptas eveniet eius soluta fuga ex blanditiis eaque amet animi dolorum omnis consequuntur doloremque beatae quas libero!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio, quam id distinctio voluptas eveniet et!",
     },
     {
       id: 2,

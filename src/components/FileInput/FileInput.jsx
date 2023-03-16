@@ -25,7 +25,7 @@ function FileInput({ imageInput, className }) {
         <p className="text-sm text-textColor-lightGrey">
           Drag and drop your {imageInput ? "image" : "file"} here
         </p>
-        <p className="text-sm text-grey">
+        <p className="text-sm text-textColor-lightGrey">
           Or <span className="text-textColor-blue">browse files</span>
         </p>
       </div>

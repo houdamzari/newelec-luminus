@@ -2,7 +2,7 @@ function Button({ primary, secondary }) {
   return (
     <>
       {primary && (
-        <button className=" px-[27px] py-[10px] rounded-md bg-orange text-white font-bold">
+        <button className=" px-[27px] py-[10px] rounded-md bg-orange text-white font-bold hover:bg-[#FDA172]">
           Update & Save
         </button>
       )}
