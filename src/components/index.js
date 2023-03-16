@@ -13,4 +13,8 @@ export { default as FileInput } from "./FileInput/FileInput";
 export { default as FormInput } from "./FormInput/FormInput";
 export { default as Dropdown } from "./Dropdown/Dropdown";
 export { default as EditSection } from "./EditSection/EditSection";
+export { default as QuestionSection } from "./QuestionSection/QuestionSection";
 export { default as Card } from "./Card/Card";
+export { default as QuestionBox } from "./QuestionSection/QuestionBox/QuestionBox";
+export { default as Checkbox } from "./QuestionSection/QuestionBox/Checkbox";
+export { default as Tooltip } from "./Tooltip/Tooltip";

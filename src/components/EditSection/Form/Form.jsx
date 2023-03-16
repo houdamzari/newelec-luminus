@@ -1,10 +1,10 @@
 import React from "react";
 import { FirstForm } from "./data";
-import {FormInput,Flex,Dropdown} from "../../../components";
+import { FormInput, Flex, Dropdown } from "../../../components";
 
 function Form() {
   return (
-    <div>
+    <div className="h-[338px]">
       <Flex
         className="w-full"
         flexDirection={"flex-row"}
@@ -50,10 +50,9 @@ function Form() {
           flexDirection={"flex-col"}
           justifyContent={"justify-center"}
           alignItems={"items-center"}
-          gap={"gap-[13px]"}
+          className={"w-[250px]"}
         >
           <Dropdown
-            className={"w-[180px]"}
             label="Departments"
             optional
             dropdownOptions={[
@@ -67,14 +66,14 @@ function Form() {
             dropdownOptions={[{ option: "function1" }, { option: "function2" }]}
           />
         </Flex>
-        <div>
+        <div className="w-full">
           <p className="text-sm font-semibold text-textColor-grey">
             Description
           </p>
           <textarea
             name="description"
             placeholder="Type here..."
-            className="border-2 h-[126px] border-grey rounded-md mt-[8px] placeholder:italic placeholder:text-textColor-grey placeholder:text-sm p-[10px] "
+            className="border-2 w-full h-[112px] border-grey rounded-md mt-[8px] placeholder:italic placeholder:text-textColor-grey placeholder:text-sm p-[10px] "
             cols="40"
           ></textarea>
         </div>
