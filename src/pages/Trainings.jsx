@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container,TitleSection } from "../components";
+import { Container,TitleSection ,EditSection} from "../components";
 function Trainings(props) {
   return (
     <>
       <Container>
-                <TitleSection />
+          <TitleSection />
+        <EditSection />
 
      </Container>
     </>
