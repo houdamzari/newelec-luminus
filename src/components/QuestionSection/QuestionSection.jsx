@@ -1,22 +1,11 @@
 import React from "react";
 import {QuestionBox, Card} from "../../components"
-
+import { useHandleQuestions } from "../../hooks/useHandleQuestions";
 function QuestionSection() {
-  const data = [
-    {
-      id: 1,
-      question:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio, quam id distinctio voluptas eveniet et!",
-    },
-    {
-      id: 2,
-      question:
-        "Dust-filter respirators may be used for continuous protection while silica sand is used as the blasting abrasive.",
-    },
-  ];
+  const { questions, addQuestions, deleteQuestions } = useHandleQuestions();
   return (
     <div className="flex justify-center">
-      <div className="w-[1250px]">
+      <div className="w-[1100px]">
         <Card className={"w-full xs:w-full px-[24px] py-[18px]"}>
           <p className="text-sm font-bold text-textColor-grey">Training</p>
           <p className="text-sm mt-[6px]">
@@ -25,11 +14,12 @@ function QuestionSection() {
             up to 100 questions.
           </p>
           <hr className="mt-[17px]" />
-          {data.map((question) => (
-            <QuestionBox data={question} key={question.id} />
+          {questions.map((question) => (
+            <QuestionBox data={question} key={question.id} deleteQuestions={deleteQuestions} />
           ))}
 
-          <button className="w-full text-textColor-blue bg-[#E1EFFF] text-center py-[13px] rounded-md mt-[17px]">
+          <button className="w-full text-textColor-blue bg-[#E1EFFF] text-center py-[13px] rounded-md mt-[17px]"
+          onClick={()=>addQuestions('This just is an intial state of a random question to test the add functionnality ')}>
             Add Question +
           </button>
         </Card>

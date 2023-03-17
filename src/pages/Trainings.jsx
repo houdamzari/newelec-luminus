@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container,TitleSection ,EditSection, QuestionBox, QuestionSection} from "../components";
+import { Container,TitleSection ,EditSection, ParamsSection, QuestionSection} from "../components";
 function Trainings(props) {
   return (
     <>
       <Container>
-          <TitleSection />
+        <TitleSection />
         <EditSection />
         <QuestionSection />
+        <ParamsSection />
      </Container>
     </>
   );

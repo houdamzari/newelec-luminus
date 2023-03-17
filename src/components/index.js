@@ -18,3 +18,8 @@ export { default as Card } from "./Card/Card";
 export { default as QuestionBox } from "./QuestionSection/QuestionBox/QuestionBox";
 export { default as Checkbox } from "./QuestionSection/QuestionBox/Checkbox";
 export { default as Tooltip } from "./Tooltip/Tooltip";
+export { default as ParamCard } from "./ParamsSection/ParamCard/ParamCard";
+export { default as NumberInput } from "./ParamsSection/NumberInput/NumberInput";
+export { default as ToggleInput } from "./ParamsSection/ToggleInput/ToggleInput";
+export { default as ParamsSection } from "./ParamsSection/ParamsSection";
+

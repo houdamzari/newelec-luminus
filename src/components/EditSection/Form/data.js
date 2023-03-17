@@ -2,7 +2,7 @@ import { security, icon } from "../../../assets";
 export const FirstForm = [
   {
     label: "Category",
-    width: "w-[35%]",
+    width: "w-[30%]",
     addNewAvailable: true,
     data: [
       { icon: security, option: "Safety" },
@@ -11,7 +11,7 @@ export const FirstForm = [
   },
   {
     label: "Topic",
-    width: "w-[43%]",
+    width: "w-[45%]",
     addNewAvailable: true,
     data: [
       { icon: icon, option: "VCA" },
@@ -20,7 +20,7 @@ export const FirstForm = [
   },
   {
     label: "Valid For",
-    width: "w-[22%]",
+    width: "w-[20%]",
     addNewAvailable: false,
     data: [{ option: "1 year" }, { option: "2 years" }],
   },

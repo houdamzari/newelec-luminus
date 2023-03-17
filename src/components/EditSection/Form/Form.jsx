@@ -31,7 +31,7 @@ function Form() {
       >
         <FormInput />
         <Dropdown
-          className="w-[35%]"
+          className="w-[44%]"
           label="Assign To"
           dropdownOptions={[
             { option: "internal worker" },
