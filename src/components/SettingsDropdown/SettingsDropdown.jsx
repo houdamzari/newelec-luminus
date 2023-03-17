@@ -31,7 +31,7 @@ function SettingsDropdown({ dropdownOptions }) {
         </div>
 
         {open && (
-          <div className="absolute top-[60px] w-[200px] bg-white left-0 rounded flex flex-col shadow-md">
+          <div className="absolute top-[60px] w-[160px] bg-white left-0 rounded flex flex-col shadow-md">
             <div className="p-2">
               <div className="font-bold text-xs ">BESIX Group</div>
               <span className="text-gray-500 text-xs  border-black w-full ">

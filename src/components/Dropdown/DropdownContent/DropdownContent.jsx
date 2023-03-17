@@ -11,7 +11,7 @@ function DropdownContent({ dropdownOptions,handleSelectOption }) {
         >
           <Flex flexDirection="flex-row" gap="gap-[10px]">
             {option.icon && (
-              <img className="w-[30px]" src={option.icon} alt="option_icon" />
+              <img className="w-[20px]" src={option.icon} alt="option_icon" />
             )}
 
             {option.option}
