@@ -1,6 +1,6 @@
 import React from "react";
 import Flex from "../../Flex/Flex";
-function DropdownContent({ dropdownOptions }) {
+function DropdownContent({ dropdownOptions,handleSelectOption }) {
   return (
     <div className="absolute top-[40px] w-full bg-white border-2 left-0 z-[9999]">
       {dropdownOptions.map((option, i) => (

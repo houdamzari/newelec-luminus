@@ -24,7 +24,7 @@ function Dropdown({
   );
 
   return (
-    <div className={`w-full text-sm font-semibold ${className ?? ""}`}>
+    <div className={`w-full text-sm xs:text-[14px] font-semibold ${className ?? ""} `}>
       <DropdownHeader
         label={label}
         addNewAvailable={addNewAvailable}

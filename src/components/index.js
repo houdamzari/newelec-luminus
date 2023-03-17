@@ -3,7 +3,8 @@ export { default as Flex } from "./Flex/Flex";
 export { default as LanguageDropdown } from "./LanguageDropdown/LanguageDropdown";
 export { default as SearchBar } from "./SearchBar/SearchBar";
 export { default as SettingsDropdown } from "./SettingsDropdown/SettingsDropdown";
-export { default as Navbar } from "./Navbar/Navbar";
+export { default as NavBar } from "./NavBar/NavBar";
+export { default as MobileNav } from "./NavBar/MobileNav/MobileNav";
 export { default as TitleSection } from "./TitleSection/TitleSection";
 export { default as Container } from "./Container/Container";
 export { default as Form } from "./EditSection/Form/Form";
@@ -25,5 +26,6 @@ export { default as ParamCard } from "./ParamsSection/ParamCard/ParamCard";
 export { default as NumberInput } from "./ParamsSection/NumberInput/NumberInput";
 export { default as ToggleInput } from "./ParamsSection/ToggleInput/ToggleInput";
 export { default as ParamsSection } from "./ParamsSection/ParamsSection";
+export { default as Layout } from "./Layout/Layout";
 
 

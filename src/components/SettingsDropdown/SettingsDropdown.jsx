@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Flex from "../Flex/Flex";
+import {Flex} from "../../components";
 import useClickOutside from "../../hooks/useClickOutside";
 import { logoutIcon, user } from "../../assets";
 

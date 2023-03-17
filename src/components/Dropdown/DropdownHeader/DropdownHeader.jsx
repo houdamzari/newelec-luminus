@@ -9,7 +9,7 @@ function DropdownHeader({ label, addNewAvailable, optional }) {
       flexWrap={"xs:flex-col"}
     >
       <p className="text-textColor-grey">{label}</p>
-      {addNewAvailable && <p className="text-textColor-blue">Add new+</p>}
+      {addNewAvailable && <p className="text-textColor-blue ">Add new+</p>}
       {optional && <p className="text-textColor-lightGrey text-xs">Optional</p>}
     </Flex>
   );
