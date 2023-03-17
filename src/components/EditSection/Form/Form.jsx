@@ -4,13 +4,14 @@ import { FormInput, Flex, Dropdown } from "../../../components";
 
 function Form() {
   return (
-    <div className="h-[311px] w-[485px] xs:w-full xs:h-fit 
+    <div className="h-[311px] w-[485px] xs:w-full xs:h-fit mobile:h-full 
     ">
       <Flex
         className="w-full"
         flexDirection={"flex-row"}
         justifyContent={"justify-start"}
         alignItems={"items-center"}
+        flexWrap='mobile:flex-wrap'
         gap={"gap-[10px]"}
       >
         {FirstForm.map((element) => (
@@ -29,6 +30,7 @@ function Form() {
         justifyContent={"justify-start"}
         alignItems={"items-center"}
         gap={"gap-[10px]"}
+        flexWrap='mobile:flex-wrap'
       >
         <FormInput />
         <Dropdown
@@ -45,20 +47,21 @@ function Form() {
         flexDirection={"flex-row"}
         justifyContent={"justify-start"}
         alignItems={"items-start"}
+        flexWrap='mobile:flex-wrap'
         gap={"gap-[10px]"}
       >
         <Flex
           flexDirection={"flex-col"}
           justifyContent={"justify-center"}
           alignItems={"items-center"}
-          className={"w-[167px]"}
+          className={"w-[167px] xs:w-full"}
         >
           <Dropdown
             label="Departments"
             optional
             dropdownOptions={[
-              { option: "departement1" },
-              { option: "departement2" },
+              { option: "Example1" },
+              { option: "Example2" },
             ]}
           />
           <Dropdown

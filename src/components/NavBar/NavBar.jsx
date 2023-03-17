@@ -81,7 +81,8 @@ function NavBar() {
         className="w-fit"
         gap={"gap-[15px]"}
       >
-        <MobileNav routes={routes} />
+        <MobileNav routes={routes} setActive={()=>setActive(!active)}
+           />
         <img src={notification} alt="notification" className="w-[15px]" />
         <LanguageDropdown dropdownOptions={languages} />
         <SettingsDropdown dropdownOptions={settings} />

@@ -3,7 +3,7 @@ import { FileInput, Flex } from "../../../components";
 
 function FileForm() {
   return (
-    <div className="w-[177px] h-[311px]">
+    <div className="w-[177px] h-[311px] mobile:h-full">
       <p className="text-sm text-textColor-grey font-semibold">Training file</p>
       <FileInput className={"mt-4 p-[2px]"} />
       <p className="mt-[6px] text-sm text-grey">

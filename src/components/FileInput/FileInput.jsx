@@ -31,17 +31,17 @@ function FileInput({ imageInput, className }) {
       </div>
       {file && (
         <Flex
-          className="bg-green-500 mt-[10px] p-[5px] rounded-md"
+          className="bg-green mt-[10px] p-[5px] rounded-md"
           flexDirection={"flex-row"}
           alignItems={"items-center"}
           justifyContent={"justify-between"}
         >
           <div>
-            <p className="text-sm text-white">Completed</p>
-            <p className="text-sm text-white">{file.name}</p>
+            <p className="text-[10px] text-white">Completed</p>
+            <p className="text-[10px] text-white ">{file.name}</p>
           </div>
           <Flex
-            className="bg-white rounded-full w-[30px] h-[30px] text-xl  cursor-pointer"
+            className="bg-white rounded-full w-[22px] h-[22px] text-xl  cursor-pointer"
             justifyContent={"justify-center"}
             alignItems={"items-center"}
             onClick={() => setFile("")}

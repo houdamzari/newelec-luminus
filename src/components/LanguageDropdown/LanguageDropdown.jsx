@@ -20,7 +20,7 @@ function LanguageDropdown({dropdownOptions}) {
         </div>
 
         {open && (
-          <div className="absolute top-[60px] w-fit rounded bg-white left-0 shadow-md z-[999]">
+          <div className="absolute top-[60px] w-fit rounded bg-white desktop:left-0 shadow-md z-[999] mobile:right-0">
             {dropdownOptions.map((option, i) => (
               <div
                 key={option.name}

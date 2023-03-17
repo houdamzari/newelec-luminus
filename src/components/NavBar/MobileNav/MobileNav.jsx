@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { cross, logo } from "../../../assets";
 import { Link } from "react-router-dom";
-function MobileNav({ routes }) {
+function MobileNav({ routes,setActive }) {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
@@ -28,12 +28,14 @@ function MobileNav({ routes }) {
             alt="cross"
           />
         </div>
-        <ul className="flex flex-col justify-center mt-8 items-start">
+        <ul className="flex flex-col justify-start mt-8 items-center w-full h-full pt-10">
           {routes.map((element) => (
             <li key={element.path}>
               <Link to={element.path}>
                 <button
-                  onClick={() => setActive(!active)}
+                  onClick={() => {
+                    setActive();
+                  setOpenMenu(false)}}
                   className={`text-xl ${
                     location.pathname === element.path
                       ? "text-textColor-blue"

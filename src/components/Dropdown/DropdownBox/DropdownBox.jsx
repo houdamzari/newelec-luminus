@@ -9,7 +9,8 @@ function DropdownBox({ open, setOpen, borderless, optionSelected }) {
         borderless ? "border-0" : "border-2"
       } `}
     >
-      <Flex flexDirection="flex-row " gap="gap-[10px]">
+      <Flex flexDirection="flex-row " gap="gap-[10px]"
+      className='xs:text-[12px]'>
         {optionSelected.icon && (
           <img
             className="w-[20px]"
